@@ -1,18 +1,19 @@
-import React from 'react';
-import Banner from './Banner';
-import Carousel from './Carousel';
+import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './movie/Home';
 
-const App = () => {
+
+
+function App() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen">
-      <Banner />
-      <div className="p-4">
-        <Carousel title="Trending Now" />
-        <Carousel title="Movies" />
-        <Carousel title="My List" />
-      </div>
-    </div>
-  );
-};
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>}>
+          <Route path='movie/:movietitle'/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
+}
 
-export default App;
+export default App

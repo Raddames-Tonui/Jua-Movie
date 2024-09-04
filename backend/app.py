@@ -25,4 +25,4 @@ def get_movie_details(movie_id):
     return jsonify(response.json())
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5555)
