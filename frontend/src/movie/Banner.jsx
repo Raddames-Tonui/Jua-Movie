@@ -4,7 +4,7 @@ import backgroundImage from "../assets/background.webp";
 const Banner = () => {
   return (
     <div 
-      className="relative h-[300px] sm:h-[400px] bg-cover bg-center" 
+      className="relative h-screen sm:h-[400px] bg-cover bg-center" 
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900"></div>

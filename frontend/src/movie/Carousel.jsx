@@ -46,7 +46,7 @@ const Carousel = ({ title }) => {
   if (error) return <div className="text-red-500">Error: {error}</div>;
 
   return (
-    <div className="my-4 bg-gray-900">
+    <div className=" bg-gray-900">
       <h2 className="text-xl font-bold mb-4">{title}</h2>
       <div className="flex overflow-x-scroll scrollbar-hide">
         {movies.length > 0 ? (
