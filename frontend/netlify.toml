@@ -4,8 +4,3 @@
   to = "/index.html"
   status = 200
 
-[build]
-  base = "frontend"
-  publish = "build"
-  command = "npm run build"
-  functions = "netlify/functions"
